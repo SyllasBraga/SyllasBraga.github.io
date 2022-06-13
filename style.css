@@ -1,0 +1,181 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    background-color: black;
+}
+.container-black{
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 100vh;
+    width: 50%;
+    color: white;
+}
+.logo-container{
+    justify-content: left;
+    align-items: left;
+}
+
+.container-wrapper{
+    justify-content: center;
+    align-items: absolute;
+    position: center;
+    margin-top: 25%;
+}
+
+.container-wrapper .btn-container{
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 20rem;
+}
+.container-wrapper a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-red{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    clip-path: circle(100% at right -20%);
+}
+.navbar-container{
+    margin-right: 80px;
+    margin-top: 50px;
+    text-align: right;
+    color: white;
+    line-height: 5px;
+}
+
+.navbar-container li{
+    display: inline;
+}
+
+.navbar-container a{
+    text-decoration: none;
+    color: white;
+    word-spacing: 20px;
+}
+
+.section-more{
+    width: 100%;
+    height: 100%;
+}
+
+.more{
+    height: 50%;
+    display: flex;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 120px;
+}
+
+.more-sabores{
+    height: 100%;
+    width: 100%;
+    margin-right: 120px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.more-sabores h3{
+    padding: 10px;
+    text-align: left;
+    border-left: 4px solid red;
+    box-sizing: content-box;
+}
+
+.sabores-itens{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.baunilha-e-zero{
+    width: 33.4%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.baunilha-e-zero img{
+    align-items: center;
+    justify-content: center;
+    padding: 5px; 
+    display: flex;
+    vertical-align: text-bottom;
+}
+
+.baunilha-e-zero a{
+    width: 60%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.coke{
+    width: 33.4%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.coke img{
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+}
+
+.coke a{
+    width: 60%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.origins{
+    width: 33.4%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.origins img{
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+}
+
+.origins a{
+    width: 60%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.more-types{
+    
+}
+
