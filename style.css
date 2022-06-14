@@ -27,7 +27,7 @@ body{
     justify-content: center;
     align-items: absolute;
     position: center;
-    margin-top: 25%;
+    margin-top: 50%;
 }
 
 .container-wrapper .btn-container{
@@ -46,7 +46,7 @@ body{
     height: 100%;
     width: 100%;
     border: 1px solid red;
-    clip-path: circle(100% at right -20%);
+    clip-path: circle(100% at right -10%);
 }
 .navbar-container{
     margin-right: 80px;
@@ -176,6 +176,46 @@ body{
 }
 
 .more-types{
-    
+    height: 50%;
+    display: flex;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 120px;
+}
+
+.types{
+    height: 100%;
+    width: 100%;
+    margin-right: 120px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.types h3{
+    padding: 10px;
+    text-align: left;
+    border-left: 4px solid red;
+    box-sizing: content-box;
+}
+
+.types-itens{
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+.types-itens img{
+    padding-left: 7%;
+    padding-right: 7%;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
 }
 
