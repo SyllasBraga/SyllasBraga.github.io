@@ -21,6 +21,11 @@ body{
 .logo-container{
     justify-content: left;
     align-items: left;
+    transition: 4s;
+}
+
+.logo-container:hover{
+    transform: rotateX(400deg);
 }
 
 .container-wrapper{
@@ -30,22 +35,35 @@ body{
     margin-top: 50%;
 }
 
+.container-wrapper p{
+    font-size: 20px;
+}
+
 .container-wrapper .btn-container{
     background-color: red;
     border: 1px solid red;
+    height: 60px;
+    width: 150px;
     padding: 10px;
     border-radius: 20rem;
+    transition: 1s;
 }
+
+.container-wrapper .btn-container:hover{
+    transform: scale(1.2);
+}
+
 .container-wrapper a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 .container-red{
-    background-color: red;
+    background-color:brown;
     height: 100%;
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid brown;
     clip-path: circle(100% at right -10%);
 }
 .navbar-container{
@@ -58,12 +76,52 @@ body{
 
 .navbar-container li{
     display: inline;
+    margin-right: 5%;
 }
 
 .navbar-container a{
+    font-size: 20px;
     text-decoration: none;
     color: white;
     word-spacing: 20px;
+    transition: 0.5s;
+}
+
+.navbar-container a:hover{
+    color: black;
+}
+
+.swipper{
+    margin-top: 20%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.swipper button{
+    margin-top: 25%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.swipper button:hover{
+    color: black;
+}
+
+.swipper img{
+    max-height: 400px;
+    max-width: 300px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .section-more{
@@ -76,7 +134,7 @@ body{
     display: flex;
     margin-left: 120px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-right: 120px;
 }
 
@@ -218,11 +276,16 @@ body{
     width: auto;
     height: auto;
     cursor: pointer;
+    transition: 1s;
+}
+
+.types-itens img:hover{
+    transform: scale(1.3);
 }
 
 .footer{
     width: 100%;
-    max-height: 45%;
+    height: 50%;
     background-color: black;
     align-items: center;
     justify-content: center;
@@ -231,25 +294,66 @@ body{
 }
 
 .footer-content{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-.footer-content img{
-    max-width: 200px;
-    max-height: 200px;
-    justify-content: left;
+.more-coca{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.footer-logo{
+    height: 100%;
+    width: 100%;
+    align-items: left;
     text-align: left;
 }
 
+.footer-logo img{
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 30px;
+}
+
 .comunication{
-    flex-direction: row;
-    justify-content: left;
+    margin-top: 4%;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
+
+.comunication a{
+    text-decoration: none;
+    color: white;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
+
+.social-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 5%;
+
+}
+
+.social-media{
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    text-align: right;
+    word-spacing: 20px;
+    padding-right: 5%;
+}
+
+.information{
     text-align: left;
 }
 
 .social-media img{
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
