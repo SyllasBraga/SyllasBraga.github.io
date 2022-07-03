@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    background-color: whitesmoke;
     margin: 0;
 }
 
@@ -9,6 +10,8 @@ body{
     width: 100%;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
 }
 .container-black{
@@ -19,20 +22,17 @@ body{
     color: white;
 }
 .logo-container{
+    display: flex;
     justify-content: left;
     align-items: left;
     transition: 4s;
-}
-
-.logo-container:hover{
-    transform: rotateX(400deg);
 }
 
 .container-wrapper{
     justify-content: center;
     align-items: absolute;
     position: center;
-    margin-top: 50%;
+    margin-top: 25%;
 }
 
 .container-wrapper p{
@@ -40,17 +40,17 @@ body{
 }
 
 .container-wrapper .btn-container{
-    background-color: red;
-    border: 1px solid red;
+    background-color: brown;
+    border: 3px solid brown;
     height: 60px;
     width: 150px;
     padding: 10px;
     border-radius: 20rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .container-wrapper .btn-container:hover{
-    transform: scale(1.2);
+    background-color: gray;
 }
 
 .container-wrapper a{
@@ -102,24 +102,32 @@ body{
 }
 
 .swipper button{
-    margin-top: 25%;
+    margin-top: 15%;
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color: transparent;
     border: transparent;
     color: white;
-    font-size: 40px;
-    transition: 0.5s;
+    font-size: 65px;
+}
+
+.swipper button:nth-child(1){
+    text-align: left;
+}
+
+
+.swipper button:nth-child(2){
+    text-align: right;
 }
 
 .swipper button:hover{
     color: black;
 }
 
-.swipper img{
-    max-height: 400px;
-    max-width: 300px;
+.swipper #img{
+    max-height: 250px;
+    max-width: 200px;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -138,14 +146,15 @@ body{
     margin-right: 120px;
 }
 
-.more-sabores{
+.more-sabores {
     height: 100%;
     width: 100%;
     margin-right: 120px;
-    padding: 20px;
+    padding: 0px;
     align-items: center;
     justify-content: center;
 }
+
 .more-sabores h3{
     padding: 10px;
     text-align: left;
@@ -159,19 +168,20 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: row;
 }
 
-.baunilha-e-zero{
-    width: 33.4%;
-    height: 100%;
+.sabores-itens *{
+    max-width: 100%;
+    max-height: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.baunilha-e-zero img{
+.sabores-itens * img{
+    max-height: 170px;
+    max-width: 220px;
     align-items: center;
     justify-content: center;
     padding: 5px; 
@@ -179,55 +189,8 @@ body{
     vertical-align: text-bottom;
 }
 
-.baunilha-e-zero a{
-    width: 60%;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.coke{
-    width: 33.4%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.coke img{
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
-}
-
-.coke a{
-    width: 60%;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.origins{
-    width: 33.4%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.origins img{
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
-}
-
-.origins a{
-    width: 60%;
+.sabores-itens * a{
+    max-width: 60%;
     padding: 10px;
     text-decoration: none;
     color: black;
@@ -237,7 +200,6 @@ body{
     height: 50%;
     display: flex;
     margin-left: 120px;
-    margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 120px;
 }
@@ -265,12 +227,13 @@ body{
     padding: 10px;
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
 .types-itens img{
-    padding-left: 7%;
-    padding-right: 7%;
+    padding: 4vh;
     max-width:300px;
     max-height:300px;
     width: auto;
@@ -296,18 +259,16 @@ body{
 .footer-content{
     margin-left: 25%;
     margin-right: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.more-coca{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
 .footer-logo{
-    height: 100%;
-    width: 100%;
-    align-items: left;
-    text-align: left;
+    margin-left: 0;
+    margin-bottom: 5%;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-logo img{
@@ -317,43 +278,179 @@ body{
 }
 
 .comunication{
-    margin-top: 4%;
-    align-items: right;
-    justify-content: right;
-    text-align: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .comunication a{
     text-decoration: none;
     color: white;
-    align-items: right;
-    justify-content: right;
-    text-align: right;
-}
-
-.social-info{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin-top: 5%;
-
-}
-
-.social-media{
-    width: 100%;
-    height: 100%;
-    justify-content: right;
-    text-align: right;
-    word-spacing: 20px;
-    padding-right: 5%;
 }
 
 .information{
-    text-align: left;
+    text-align: center;
+}
+
+.social-media{
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 20px;
+    padding-right: 5%;
 }
 
 .social-media img{
     width: 25px;
     height: 25px;
+}
+
+@media only screen and (max-width: 850px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .container{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0;
+        background:  linear-gradient(100deg, black, brown);
+        animation: bgTransition 8s ease-in-out infinite;
+    }
+    .container-black {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .container-black .logo-container{
+        margin-top: 10%;
+        justify-content: center;
+    }
+
+    .container-wrapper{
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        width: 90%;
+    }
+    .container-wrapper .btn-container{
+        background-color: brown;
+        align-items: center;
+        border: 4px brown solid;
+        transition: 0.5s;
+    }
+
+    .container-red{
+        background-color: transparent;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        clip-path: none;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border: transparent;
+    }
+    .container-red .navbar-container{
+        display: none;
+    }
+    .container-red .swipper{
+        margin: 0;
+    }
+    .section-more .more{
+        margin: 0;
+        margin-top: 10%;
+    }
+    .more-sabores{
+        max-width: 80%;
+        max-height: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+    .more-sabores h3{
+        text-align: center;
+        max-width: auto;
+        max-height: auto;
+        border: transparent;
+        border-bottom: 4px solid brown;
+    }
+    .sabores-itens{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sabores-itens * img{
+        padding: 10px;
+        max-height: 150px;
+        max-width: 150px;
+    }
+    .sabores-itens * a{
+        max-height: 100px;
+        max-width: 200px;
+    }
+    .more-types{
+        margin-bottom: 5%;
+    }
+
+    .types{
+        max-width: 80%;
+        max-height: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+    .types h3{
+        text-align: center;
+        border: transparent;
+        border-bottom: 4px solid brown;
+    }
+    .types-itens{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .types-itens img{
+        max-width:250px;
+        max-height:250px;
+    }
+    .footer{
+        margin: 0;
+        background-color: black;
+        height: 50%;
+        width: 100vh;
+
+    }
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 5%;
+    }
+    @keyframes bgTransition{
+        0%{
+            background-position: 0% 80%;
+        }
+        50%{
+            background-position: 80% 100%;
+        }
+        100%{
+            background-position: 0% 90%;
+        }
+    }
+
 }
 
