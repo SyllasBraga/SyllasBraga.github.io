@@ -1,8 +1,6 @@
 const BTN_BACK = document.getElementById("back");
 const BTN_NEXT = document.getElementById("next");
 const alterImg = document.getElementById("img");
-let x = 0;
-console.log(x);
 const ARRAY_IMG =  ["./images/cocacola1.png",
                     "./images/cocacola2.png",
                     "./images/cocacola3.png",
