@@ -14,6 +14,9 @@ body{
     align-items: center;
     background-color: black;
 }
+.menu{
+    display: none;
+}
 .container-black{
     margin-left: 80px;
     margin-top: 50px;
@@ -324,6 +327,66 @@ body{
         background-size: auto;
         animation: bgTransition 1s ease-in-out infinite;
     }
+    .menu{
+        background-color: transparent;
+        height: 2%;
+        width: 100%;
+        margin-right: 2%;
+        display: flex;
+        justify-content: right;
+    }
+    #toogle{
+        display: none;
+    }
+    .checkbox{
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+    .checkbox .trace{
+        padding: 0;
+        width: 70px;
+        height: 8px;
+        background-color: dimgray;
+        position: absolute;
+        border-radius: 4px;
+        transition: 0.5s ease-in-out;
+    }
+    .checkbox .trace:nth-child(1){
+        top: 26px;
+        transform: rotate(0);
+    }
+    
+    .checkbox .trace:nth-child(2){
+        top: 46px;
+        transform: rotate(0);
+    }
+    
+    .checkbox .trace:nth-child(3){
+        top: 66px;
+        transform: rotate(0);
+    }
+    #toogle:checked + .checkbox .trace:nth-child(1){
+        transform: rotate(45deg);
+        top: 47px;
+    }
+    
+    #toogle:checked + .checkbox .trace:nth-child(2){
+        transform: translateX(-100px);
+        width: 30px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    #toogle:checked + .checkbox .trace:nth-child(3){
+        transform: rotate(-45deg);
+        top: 48px;
+    }
     .container-black {
         margin: 0;
         height: 100%;
@@ -331,7 +394,7 @@ body{
         justify-content: center;
     }
     .container-black .logo-container{
-        margin-top: 10%;
+        margin-top: 2%;
         justify-content: center;
     }
 
@@ -363,8 +426,10 @@ body{
         margin-bottom: 10%;
         border: transparent;
     }
-    .container-red .navbar-container{
-        display: none;
+    
+    .navbar-container .clicked{
+        height: 100vh;
+        width: 100vh;
     }
     .container-red .swipper{
         margin: 0;
