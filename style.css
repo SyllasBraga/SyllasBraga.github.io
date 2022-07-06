@@ -198,7 +198,8 @@ body{
     height: 50%;
     display: flex;
     margin-left: 120px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     margin-right: 120px;
 }
 
@@ -209,6 +210,7 @@ body{
     padding: 20px;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .types h3{
@@ -385,6 +387,9 @@ body{
         max-height: auto;
         border: transparent;
         border-bottom: 4px solid brown;
+        padding-right: 25px;
+        padding-left: 25px;
+        
     }
     .sabores-itens{
         display: grid;
@@ -417,6 +422,8 @@ body{
         text-align: center;
         border: transparent;
         border-bottom: 4px solid brown;
+        padding-right: 25px;
+        padding-left: 25px;
     }
     .types-itens{
         padding: 0;
