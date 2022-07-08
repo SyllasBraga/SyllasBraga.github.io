@@ -323,9 +323,9 @@ body{
         flex-wrap: wrap;
         text-align: center;
         margin: 0;
-        background:  linear-gradient(-50deg, black, brown);
-        background-size: auto;
-        animation: bgTransition 1s ease-in-out infinite;
+        background:  linear-gradient(-40deg, black, brown);
+        background-size: 400vh 400vh;
+        animation: bgTransition 20s ease-out infinite;
     }
     .menu{
         background-color: transparent;
@@ -427,9 +427,11 @@ body{
         border: transparent;
     }
     
-    .navbar-container .clicked{
-        height: 100vh;
-        width: 100vh;
+    .navbar-container {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .container-red .swipper{
         margin: 0;
@@ -513,13 +515,13 @@ body{
     }
     @keyframes bgTransition{
         0%{
-            background-position: 0% 80%;
+            background-position: 0% 50%;
         }
         50%{
-            background-position: 80% 100%;
+            background-position: 50% 70%;
         }
         100%{
-            background-position: 100% 0%;
+            background-position: 70% 100%;
         }
     }
 

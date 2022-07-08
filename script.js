@@ -11,7 +11,6 @@ let cont = 0;
 const toogle = document.getElementById("toogle");
 const nav = document.getElementById("navbar-container");
 let contNav = 0;
-nav.style.display = "none";
 function passarImg() {
         cont++;
         if (cont >= ARRAY_IMG.length) {
