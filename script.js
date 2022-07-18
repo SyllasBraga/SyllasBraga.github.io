@@ -1,47 +1,45 @@
-const BTN_BACK = document.getElementById("back");
+const IMG = document.getElementsByClassName("img");
+const IMG_STYLE = document.getElementById("img");
 const BTN_NEXT = document.getElementById("next");
-const alterImg = document.getElementById("img");
-const ARRAY_IMG =  ["./images/cocacola1.png",
-                    "./images/cocacola2.png",
-                    "./images/cocacola3.png",
-                    "./images/cocacola4.png",
-                    "./images/cocacola5.png",
-                    "./images/cocacola6.png"];
-let cont = 0;
-const toogle = document.getElementById("toogle");
-const nav = document.getElementById("navbar-container");
-let contNav = 0;
-function passarImg() {
-        cont++;
-        if (cont >= ARRAY_IMG.length) {
-            cont = 0;
-            alterImg.src = ARRAY_IMG[cont];
-        }else{
-            alterImg.src = ARRAY_IMG[cont]; 
-        }
-}
+const BTN_BACK = document.getElementById("back");
 
-function voltarImg() {
-        cont--;
-        if (cont < 0) {
-            cont = ARRAY_IMG.length - 1;
-            alterImg.src = ARRAY_IMG[cont];       
-        }else{
-            alterImg.src = ARRAY_IMG[cont];               
-        }
-}
+let atualImg = 0;
+let proxImg = 1;
 
-function alteraNav() {
-    contNav++;
-    if (contNav == 1) {
-        nav.style.display = "inline";
-    }else if(contNav == 2){
-        nav.style.display = "none";
-        contNav = 0;
+
+function nextImg() {
+    if (proxImg>IMG.length-1) {
+        IMG[atualImg].classList.remove("imgVisivel");
+        atualImg = 0;
+        IMG[atualImg].classList.add("imgVisivel");
+        proxImg=1;
+        console.log("ProxImg: "+proxImg+". AtualImg: "+atualImg+" if nextImg")
+    }else{
+        IMG[atualImg].classList.remove("imgVisivel");
+        IMG[proxImg].classList.add("imgVisivel");
+        atualImg++;
+        proxImg++;
+        console.log("ProxImg: "+proxImg+". AtualImg: "+atualImg+" nextImg");
     }
+    IMG_STYLE.style.transform = "translateX(-50px)";
+
+}
+function backImg() {
+    if (atualImg<=0) {
+        IMG[atualImg].classList.remove("imgVisivel");
+        atualImg = IMG.length-1;
+        IMG[atualImg].classList.add("imgVisivel");
+        proxImg = IMG.length-2;
+        console.log("ProxImg: "+proxImg+". AtualImg: "+atualImg+" if backImg")
+    }else{
+        IMG[atualImg].classList.remove("imgVisivel");
+        atualImg--;
+        IMG[proxImg].classList.add("imgVisivel");
+        proxImg--;
+        console.log("ProxImg: "+proxImg+". AtualImg: "+atualImg+" backImg")
+    }
+
 }
 
-toogle.addEventListener('click', alteraNav);
-BTN_NEXT.addEventListener('click', passarImg);
-BTN_BACK.addEventListener('click', voltarImg);
-
+BTN_NEXT.addEventListener("click", nextImg);
+BTN_BACK.addEventListener("click", backImg);

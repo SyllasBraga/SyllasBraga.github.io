@@ -126,11 +126,17 @@ body{
     color: black;
 }
 
-.swipper #img{
+.swipper .img{
+    display: none;
+}
+.swipper .imgVisivel{
+    display: flex;
     max-height: 250px;
     max-width: 200px;
     padding-left: 60px;
     padding-right: 60px;
+    transition: transform 0.5s ease;
+    transform: translateX(-50deg);
 }
 
 .section-more{
